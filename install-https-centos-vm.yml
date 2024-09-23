@@ -65,6 +65,6 @@
         state: present
         template: service.yml.j2
     - name: "Create Route"
-        kubernetes.core.k8s:
+      kubernetes.core.k8s:
           state: present
           template: route.yml.j2
